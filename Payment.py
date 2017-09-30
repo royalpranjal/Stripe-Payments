@@ -1,5 +1,7 @@
 import stripe
 
+# This class can be used as an abstraction layer without worrying about other the logic of implementing it
+
 class Payment(object):
     stripe.api_key = "YOUR SECRET KEY"
 
