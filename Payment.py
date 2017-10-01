@@ -65,8 +65,8 @@ class Payment(object):
         )
 
     @staticmethod
-    def refund_charge(charge_id):
+    def refund_charge(charge_id, amount):
         stripe.Refund.create(
             charge=charge_id,
-            amount=int(booking.amount*100)
+            amount=amount
         )
